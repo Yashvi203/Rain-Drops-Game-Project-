@@ -11,11 +11,11 @@ class Drops{
         this.x=x;
         this.y=y;
         this.r=r;
-        this.body=Bodies.circle(this.x, this.y, this.r/2, options)
+        this.body=Bodies.circle(this.x, this.y, this.r/2, options);
         World.add(world, this.body);
 
         if(this.rain.position.y > height){
-            Matter.Body.setPosition(this.rain, {x:random(0,400), y:random(0,400)})
+            Matter.Body.setPosition(this.rain, {x:random(0,400), y:random(0,400)});
         }
     }
     
@@ -26,9 +26,9 @@ class Drops{
         var dropsObject=this.body.radius(70);
         push()
         translate(dropspos.x, dropspos.y);
-        rectMode(CENTER)
+        rectMode(CENTER);
         strokeWeight(3);
-        fill(255,0,255)
+        fill(255,0,255);
         ellipse(0,0,this.r, this.r);
         radius:70;
         pop()

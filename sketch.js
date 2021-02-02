@@ -6,12 +6,15 @@ var engine, world;
 var drops;
 var umbrella;
 var thunder;
+var thunder1, thunder2, thunder3, thunder4;
 
 function preload(){
     umbrellaImg = loadImage("walking_1.png", "walking_2.png", "walking_3.png", "walking_4.png", "walking_5.png", "walking_6.png", "walking_7.png", "walking_8.png");
     thunderImg = loadImage("3.png", "5.png");
     thunder1 = loadImage("1.png");
     thunder2 = loadImage("2.png");
+    thunder3 = loadImage("3.png");
+    thunder4 = loadImage("4.png");
 }
 
 function setup(){
@@ -38,9 +41,13 @@ function setup(){
             break;
             case 2: thunder.addImage(thunder2);
             break;
+            case 3: thunder.addImage(thunder3);
+            break;
+            case 4: thunder.addImage(thunder4);
+            break;
             default: break;
         }
-        thunder.scale = random(0.3, 0.6)
+        thunder.scale = random(0.3, 0.6);
     }
 }
 
@@ -53,5 +60,7 @@ function draw(){
     thunder.display();
     thunder1.display();
     thunder2.display();
+    thunder3.display();
+    thunder4.display();
 }   
 
