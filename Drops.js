@@ -24,13 +24,13 @@ class Drops{
     {
         var dropspos=this.body.position;
         var dropsObject=this.body.radius(70);
-        push()
+        push();
         translate(dropspos.x, dropspos.y);
         rectMode(CENTER);
         strokeWeight(3);
         fill(255,0,255);
         ellipse(0,0,this.r, this.r);
         radius:70;
-        pop()
+        pop();
     }
 }
